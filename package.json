@@ -1,0 +1,22 @@
+{
+  "name": "codecepttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/codeceptjs run --reporter mocha-junit-reporter",
+    "test2": "./node_modules/.bin/codeceptjs run --reporter mocha-multi",
+    "testparallel": "./node_modules/.bin/codeceptjs run-multiple parallel --plugins allure",
+    "testparallelworker": "./node_modules/.bin/codeceptjs run-workers 2 --plugins allure"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/selenium-standalone-service": "^6.1.14",
+    "codeceptjs": "^2.6.7",
+    "mocha-junit-reporter": "^2.0.0",
+    "mocha-multi": "^1.1.3",
+    "mochawesome": "^6.1.1",
+    "webdriverio": "^6.3.5"
+  }
+}
